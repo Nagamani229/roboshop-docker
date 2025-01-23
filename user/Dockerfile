@@ -9,7 +9,5 @@ COPY package.json /opt/server/
 COPY server.js /opt/server/
 RUN npm install
 RUN echo Hello World
-USER root
-RUN adduser -D cart
-USER cart
+RUN adduser cart
 CMD ["node", "server.js"]
