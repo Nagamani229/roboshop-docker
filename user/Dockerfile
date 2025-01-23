@@ -11,4 +11,5 @@ RUN npm install
 RUN echo Hello World
 USER root
 RUN adduser cart
+USER cart
 CMD ["node", "server.js"]
