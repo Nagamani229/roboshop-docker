@@ -10,6 +10,6 @@ COPY server.js /opt/server/
 RUN npm install
 RUN echo Hello World
 USER root
-RUN adduser cart
+RUN adduser -D cart
 USER cart
 CMD ["node", "server.js"]
